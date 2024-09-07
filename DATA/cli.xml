@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Okey, so now we need to define some conventions about the cli-->
+ <cli>
+    
+    <cli_setting>
+        <width_val>
+            <regular unit="char">30</regular> <!-- #TODO should we make it 32?-->
+            <extended unit="char">38</extended>
+            <full unit="char">62</full>
+         </width_val>
+
+         <voice_enable type="bool">false</voice_enable> <!-- Enable when we have a voice generator -->
+    </cli_setting>
+
+    <cli_i.o>
+        <input>">"</input> <!-- XML doesn't like that...-->
+        <output>":"</output>
+        <out_separation>
+            <indentation>0</indentation>
+            <newline>1</newline>
+        </out_separation>
+    </cli_i.o>
+
+ </cli>
+ 
+
+<!-- #TODO add a _ thingy wherever you are going to type-->
+<!-- I'm not sure that an xml is the best way to do this. maybe a .json? nah-->
